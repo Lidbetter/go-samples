@@ -84,7 +84,7 @@ func (srv *Server) Start() error {
 	return srv.Serve(ln)
 }
 
-func main()  {
+func HttpExample()  {
 	addr := os.Getenv("HTTP_LISTEN")
 	if addr == "" {
 		addr = ":8080"

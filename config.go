@@ -117,7 +117,7 @@ type Config struct {
 	DbConnectionDSN string `env:"DATABASE_DSN" required:"true"`
 }
 
-func main()  {
+func ConfigExample()  {
 	config := Config{}
 	confErr := FillEnvTags(&config)
 	if  confErr != nil {
